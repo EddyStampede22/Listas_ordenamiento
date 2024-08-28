@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 public class Correlacion {
     public static double media(int posicion) throws IOException {
-        FileReader archivoFisico = new FileReader(".idea/hola.csv");
+        FileReader archivoFisico = new FileReader("out/production/Desarrollo3/hola.csv");
         BufferedReader archivoLogico = new BufferedReader(archivoFisico);
         String registro = null;
         double suma = 0.0;
@@ -21,7 +21,7 @@ public class Correlacion {
         return suma/contador;
     }
     public static double desviacion(int posicion) throws IOException {
-        FileReader archivoFisico = new FileReader(".idea/hola.csv");
+        FileReader archivoFisico = new FileReader("out/production/Desarrollo3/hola.csv");
         BufferedReader archivoLogico = new BufferedReader(archivoFisico);
         String registro = null;
         double suma = 0.0;
@@ -43,7 +43,7 @@ public class Correlacion {
         return desviacionfinal;
     }
     public static double PearsonCoefficient(int posicion1,int posicion2) throws IOException {
-        FileReader archivoFisico = new FileReader(".idea/hola.csv");
+        FileReader archivoFisico = new FileReader("out/production/Desarrollo3/hola.csv");
         BufferedReader archivoLogico = new BufferedReader(archivoFisico);
         String registro = null;
         double suma = 0.0;
